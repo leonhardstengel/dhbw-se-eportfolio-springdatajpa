@@ -1,7 +1,5 @@
 package com.se.eportfoliojpa.entities;
 
-import com.sun.istack.NotNull;
-
 import javax.persistence.*;
 import java.util.List;
 
