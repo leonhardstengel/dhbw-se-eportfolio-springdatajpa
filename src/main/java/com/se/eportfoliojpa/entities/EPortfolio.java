@@ -9,16 +9,13 @@ import java.util.*;
 public class EPortfolio {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "eportfolioId")
-    @NotNull
+    @Column(name = "eportfolioId", nullable = false)
     private int id;
 
-    @NotNull
     private String title;
 
     @ManyToOne
     @JoinColumn(name = "presenter")
-    @NotNull
     private Student presenter;
 
     @ManyToMany
@@ -26,10 +23,9 @@ public class EPortfolio {
             joinColumns = @JoinColumn(name = "eportfolioId"),
             inverseJoinColumns = @JoinColumn(name = "studentId")
     )
-    @NotNull
+
     private List<Student> listeners = new ArrayList<Student>();
 
-    @NotNull
     private Date date;
 
     public EPortfolio(String title, Student presenter, List<Student> listeners, Date date) {

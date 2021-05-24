@@ -44,7 +44,7 @@ public class EportfoliojpaApplication {
 			for(EPortfolio p: ePortfolioRepository.findAll()) {
 				System.out.println(p.toString());
 			}
-			
+
 			System.out.println("\nfindById:");
 			System.out.println(studentRepository.findById(1).toString());
 

@@ -3,7 +3,6 @@ package com.se.eportfoliojpa.entities;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -11,8 +10,7 @@ import java.util.List;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "studentId")
-    @NotNull
+    @Column(name = "studentId", nullable = false)
     private int id;
 
     @Column
