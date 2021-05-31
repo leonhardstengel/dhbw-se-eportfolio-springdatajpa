@@ -9,4 +9,4 @@ To follow the implementation during the e-portfolio...
 You'll need Maven or Gradle to make everything work! (I'll use Maven. For a different project initialization see the Spring documentation)
 
 ## About the Project
-This project implements a simple system for storing e-portfolios and students in a H2-Database and the use of Spring Data JPA. An e-portfolio is held by one student (n:1) and several students can listen to it (n:n).
+This project implements a simple system for storing e-portfolios and students in a H2-Database with the use of Spring Data JPA. An e-portfolio is held by one student (n:1) and several students can listen to it (n:n).
